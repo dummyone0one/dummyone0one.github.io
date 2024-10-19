@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Language | انتخاب زبان</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Select Language</h1>
+        <h1>انتخاب زبان</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="media">
+                <button onclick="setLanguage('en')" style="padding: 10px 20px; font-size: 16px;">English</button>
+                <button onclick="setLanguage('fa')" style="padding: 10px 20px; font-size: 16px;">فارسی</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dummy One 0 One. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'fa') {
+                window.location.href = 'Persian.html';
+            } else if (lang === 'en') {
+                window.location.href = 'English.html';
+            }
+        }
+    </script>
+</body>
+</html>
